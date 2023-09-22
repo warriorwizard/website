@@ -95,7 +95,7 @@
           <em>NIET Conference</em>, 2023 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
           <br>
           <a href="https://colab.research.google.com/drive/1bS1DFop8DOHK6u1knkTis2R-Er9a0_Yp?usp=sharing">project page</a>
-          /
+          <!-- / -->
           <!-- <a href="https://arxiv.org/abs/04.06706">arXiv</a> -->
           <p></p>
           <p>
@@ -127,7 +127,7 @@
           </script>
         </td>
         <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://bakedsdf.github.io/">
+          <a href="#">
             <span class="papertitle">Recognition of Sentiment using Deep Neural Network</span>
           </a>
           <br>
@@ -138,7 +138,7 @@
           <em>IJTSRD</em>, 2023
           <br>
           <a href="https://github.com/warriorwizard/Facial_expression_recognitioin_facial_expression">project page</a>
-          /
+          <!-- / -->
           <!-- <a href="https://www.youtube.com/watch?v=fThKXZ6DTk">video</a> -->
           /
           <a href="https://www.ijtsrd.com/papers/ijtsrd52797.pdf">arXiv</a>
@@ -150,10 +150,49 @@
           </p>
         </td>
       </tr>
+      
+      <tr onmouseout="car_stop()" onmouseover="car_start()"  bgcolor="#ffffd0">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id='car_image'><video  width=100% height=100% muted autoplay loop>
+            <source src="images/car_logo.gif" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+            <img src='images/car_logo.gif' width="160">
+          </div>
+          <script type="text/javascript">
+            function car_start() {
+              document.getElementById('bakedsdf_image').style.opacity = "1";
+            }
 
-      <tr>
-        
+            function car_stop() {
+              document.getElementById('bakedsdf_image').style.opacity = "0";
+            }
+            car_stop()
+          </script>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://bakedsdf.github.io/">
+            <span class="papertitle">Multiclass car logo detection using Transfer Learning (ResNet and VGG)</span>
+          </a>
+          <br>
+          <strong>Amit Yadav</strong>,
+          <br>
+          <em>September</em>, 2023
+          <br>
+          <a href="car_logo/CAR_LOGO.html" target=”_blank”>project page</a>
+          <!-- / -->
+          <!-- <a href="https://www.youtube.com/watch?v=fThKXZ6DTk">video</a> -->
+          <!-- / -->
+          <!-- <a href="https://www.ijtsrd.com/papers/ijtsrd52797.pdf">arXiv</a> -->
+          <p></p>
+          <p>
+            The project demonstrates the real time car logo detection using images and the model is trained on ResNet and VGG.
+            It is a 28 class classification problem with whooping 87% accuracy. See the project page for more information.
+          </p>
+        </td>
       </tr>
+      
 
       <!-- <tr onmouseout="merf_stop()" onmouseover="merf_start()">
         <td style="padding:20px;width:25%;vertical-align:middle">
