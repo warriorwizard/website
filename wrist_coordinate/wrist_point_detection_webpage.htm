@@ -1,0 +1,311 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Mangal;
+	panose-1:2 4 5 3 5 2 3 3 2 2;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Title Char";
+	margin:0cm;
+	font-size:28.0pt;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-link:"Title Char";
+	margin:0cm;
+	font-size:28.0pt;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-link:"Title Char";
+	margin:0cm;
+	font-size:28.0pt;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-link:"Title Char";
+	margin:0cm;
+	font-size:28.0pt;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-link:Title;
+	font-family:"Calibri Light",sans-serif;
+	letter-spacing:-.5pt;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:36.0pt 36.0pt 36.0pt 36.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-IN link="#0563C1" vlink="#954F72" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoTitle align=center style='text-align:center'><span lang=EN-US>Wrist
+Point Detection </span><span lang=EN-US style='font-size:14.0pt'>(Building from
+scratch)</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:18.0pt;line-height:107%;
+background:yellow'>Aim:</span><span lang=EN-US style='font-size:18.0pt;
+line-height:107%'> </span></p>
+
+<p class=MsoNormal><span style='line-height:107%;font-family:"Arial",sans-serif;
+color:black'>Write a deep learning algorithm/ architecture to detect the <b>(x,
+y)</b> coordinates of the wrist points as shown in the snapshot below for
+real-time application.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='color:black'><img width=294 height=226
+src="wrist_point_detection_webpage_files/image001.png"></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:16.0pt;line-height:107%;
+background:yellow'>Final Output:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+style='font-size:12.0pt;line-height:107%;background:aqua'>We could have done
+this using MediaPipe or other tools, but I wanted to do from scratch.</span></p>
+
+<p class=MsoNormal><img width=615 height=154
+src="wrist_point_detection_webpage_files/image002.jpg"
+alt="A collage of a person holding his hands up&#10;&#10;Description automatically generated"></p>
+
+<p class=MsoNormal><span lang=EN-US>                                                                                                                                                                                    </span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:18.0pt;line-height:107%;
+background:yellow'>Dataset:</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='line-height:107%'>80 images were
+taken and manually annotated and later using <span style='background:lightgrey'>Data
+Augmentation Pipeline</span> per image <span style='background:lightgrey'>45
+augmented images</span> were created for each. </span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='line-height:107%;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='line-height:107%'>Test</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='line-height:107%;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='line-height:107%'>Train</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='line-height:107%;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='line-height:107%'>Val</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='line-height:107%'>Total no. of
+images 3600 images in each folder <br>
+<br>
+Each folder contains <span style='background:lime'>Images</span> and <span
+style='background:lime'>Labels</span> subfolders.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Initially the image size from camera was
+640 x 480, later it was reduced to 250 x 250.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>The label was also transformed and made
+compatible with 250 x 250 and was normalized.                                                                                                                                       </span></p>
+
+<p class=MsoNormal><span style='position:absolute;z-index:251658240;margin-left:
+552px;margin-top:302px;width:212px;height:501px'><img width=170 height=401
+src="wrist_point_detection_webpage_files/image003.png"
+alt="A diagram of a computer program&#10;&#10;Description automatically generated"></span><span
+lang=EN-US style='font-size:18.0pt;line-height:107%;background:yellow'>Architecture</span><span
+lang=EN-US style='font-size:18.0pt;line-height:107%'>:</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='line-height:107%'>The input shape
+was 250 x 250.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='line-height:107%'>Used Transfer
+Learning over</span><span lang=EN-US> </span><span lang=EN-US style='line-height:
+107%;background:red'>ResNet152V2</span><span lang=EN-US style='line-height:
+107%'> and adjusted</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='line-height:107%'>the weights.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='line-height:107%'>And the output
+shape was one dimensional with 8 values.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='line-height:107%'>8 values
+represented the </span></p>
+
+<p class=MsoNormal><span lang=EN-US style='line-height:107%'>X1, y1, x2, y2,
+x3, y3, x4, y4 coordinates 4 points mentioned.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='line-height:107%'><img width=297
+height=207 id="Picture 1" src="wrist_point_detection_webpage_files/image004.png"
+alt="A person holding up their hand&#10;&#10;Description automatically generated"></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:18.0pt;line-height:107%;
+background:yellow'>Learning Graph:</span></p>
+
+<p class=MsoNormal><img width=455 height=374
+src="wrist_point_detection_webpage_files/image005.jpg" align=left hspace=12
+alt="A graph with blue and orange lines&#10;&#10;Description automatically generated"></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:18.0pt;line-height:107%'>The
+model converged after 2<sup>nd</sup> epoch, and I haven’t implemented <span
+style='background:lime'>EarlyStopping</span> so it remain consistent for 10
+epochs.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:18.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:18.0pt;line-height:107%;
+background:yellow'>Challenges:</span><span lang=EN-US style='font-size:18.0pt;
+line-height:107%'> </span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:18.0pt;line-height:107%'>The
+real challenge was creating the dataset and annotation the dataset and what
+kind of annotation to do, so after doing some research I settled with Keyframe
+annotation and used the keyframe to save in csv and later converted into Json.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:18.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:18.0pt;line-height:107%'>Normalization
+was a bit tricky and later augmentation and verification of keyframe added more
+complexity.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:18.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:18.0pt;line-height:107%'>Training
+images even on GTX 1650 took a lot of time and after several crashes I was
+finally able to train the model and verify the accuracy of the model and test
+out on real dataset.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:18.0pt;line-height:107%'>&nbsp;</span></p>
+
+<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<p class=MsoNormal style='border:none;padding:0cm'><span lang=EN-US
+style='font-size:18.0pt;line-height:107%;background:yellow'>File Structure:</span><span
+lang=EN-US style='font-size:18.0pt;line-height:107%'> </span></p>
+
+<p class=MsoNormal style='border:none;padding:0cm'><span lang=EN-US
+style='font-size:18.0pt;line-height:107%;background:lime'>app.py</span><span
+lang=EN-US style='font-size:18.0pt;line-height:107%'> – for running the code on
+video.</span></p>
+
+<p class=MsoNormal style='border:none;padding:0cm'><span lang=EN-US
+style='font-size:18.0pt;line-height:107%;color:black;background:lime'>wrist_estimator.ipynb</span><span
+lang=EN-US style='font-size:18.0pt;line-height:107%;color:black'> </span><span
+lang=EN-US style='font-size:18.0pt;line-height:107%'>– Complete walkdown of
+model designing</span></p>
+
+<p class=MsoNormal style='border:none;padding:0cm'><span lang=EN-US
+style='font-size:18.0pt;line-height:107%;background:lime'>data_convert.ipynb</span><span
+lang=EN-US style='font-size:18.0pt;line-height:107%'> – For converting the data
+and creating the dataset</span></p>
+
+<p class=MsoNormal style='border:none;padding:0cm'><span lang=EN-US
+style='font-size:18.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='border:none;padding:0cm'><span lang=EN-US
+style='font-size:18.0pt;line-height:107%'>&nbsp;</span></p>
+
+</div>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='line-height:107%;background:yellow'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='line-height:107%;background:yellow'>Amit
+Yadav</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='line-height:107%;background:yellow'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><a href="mailto:amitech90@gmail.com"><span lang=EN-US
+style='line-height:107%;background:yellow'>amitech90@gmail.com</span></a></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='line-height:107%;background:yellow'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='line-height:107%;background:yellow'>+91
+7518844490</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='line-height:107%;background:yellow'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='line-height:107%;background:yellow'>https://github.com/warriorwizard</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:18.0pt;line-height:107%'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>
